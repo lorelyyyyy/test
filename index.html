@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<!-- Created By traagent -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armis BOT - Destek Sitesi</title>
+    <link rel="icon" href="Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Yüklenme Ekranı -->
+    <div id="loadingScreen">
+        <div class="loader"></div>
+    </div>
+    <!-- Yüklenme Ekranı end-->
+    <!-- navbar -->
+    <header>
+        <h1 class="logo">Bot Site Template</h1>
+        <nav>
+            <ul class="nav-area top-nav">
+                <li><a href="#top">Ana Sayfa</a></li>
+                <li><a href="#features">Bot Hakkında</a></li>
+                <li><a href="#commands">Komutlar</a></li>
+                <li><a href="#faq">SSS</a></li>
+            </ul>
+        </nav>
+        <a href="https://discord.com/oauth2/authorize?client_id=1267945197837484143&permissions=8&integration_type=0&scope=bot+applications.commands" class="btn-area">Botu Sunucuna Ekle</a>
+    </header>
+    <!-- navbar end -->
+    <!-- home -->
+    <div class="wrapper" style="background-color: #121212">
+        <div class="home" id="home">
+            <div class="home-text" style="background-color: #121212">
+                <h1 id="botname">Armis</h1>
+                <p class="bot-description">Türkiye'nin En Gelişmiş Botunu Arıyorsanız Aşşağıdaki Butonlardan Beni Sunucunuza Ekleyiniz<br></p>
+                <a href="https://discord.com/oauth2/authorize?client_id=1267945197837484143&permissions=8&integration_type=0&scope=bot+applications.commands"><button class="home-btn">Sunucuna Ekle</button></a>
+                <a href="https://discord.gg/8J8RAWrMrH"><button class="home-btn">Destek Sunucum</button></a>
+            </div>
+            <div class="home-img">
+                <img src="Logo.png"
+                    alt="Home-Image">
+            </div>
+        </div>
+    </div>
+    <!-- home end -->
+    <div class="curve">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill-opacity="1" id="faq"
+                d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+    <!-- Video Section Start -->
+    <div class="video-section">
+        <!-- features -->
+    <div class="features">
+        <div class="wrapper reveal">
+            
+            <div class="title">
+                <div class="th1">
+                    <h1 id="features">En İyisini Sunuyoruz</h1>
+                </div>
+                <center>
+                    <div class="thr">
+                        <hr>
+                    </div>
+                </center>
+            </div>
+            <!-- feature start -->
+            <div class="features-grid">
+                <div class="feature feature1">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h4>Moderasyon Komutları</h4>
+                    <p>Discord sunucunuz için en işlevli ve en iyi moderasyon komutlarını sunuyoruz!</p>
+
+                </div>
+                <!-- feature end -->
+                <!-- feature start -->
+                <div class="feature feature2">
+                    <i class="fas fa-server"></i>
+                    <h4>7/24 Aktif</h4>
+                    <p>Discord Botumuz BAKIM Hariç 7/24 Aktif.</p>
+
+                </div>
+                <!-- feature end -->
+                <!-- feature start -->
+                <div class="feature feature3">
+                    <i class="fab fa-angellist"></i>
+                    <h4>Kolay Kullanım
+                    </h4>
+                    <p>Basit altyapısı ile kullanıcılarına kolay bir deneyim sunar.</p>
+                </div>
+                <!-- feature end -->
+                
+            </div>
+        </div>
+    </div>
+    <!-- commands -->
+    <div class="curved">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill-opacity="1" id="commands"
+                d="M0,224L48,229.3C96,235,192,245,288,218.7C384,192,480,128,576,133.3C672,139,768,213,864,229.3C960,245,1056,203,1152,186.7C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+    <div class="wrapper reveal" style="background-color: #121212;">
+        <div class="title">
+            <div class="th1">
+                <h1>Komutlar</h1>
+            </div>
+            <center>
+                <div class="thr">
+                    <hr>
+                </div>
+            </center>
+        </div>
+        <!-- Command Category -->
+        <nav>
+            <div class=" categorys">
+                <span class="category active" data-name="all">Hepsi</span>
+                <span class="category" data-name="info">Kişisel</span>
+                <span class="category" data-name="fun">Eğlence</span>
+                <span class="category" data-name="moderator">Moderasyon</span>
+                <span class="category" data-name="bot">Bot</span>
+            </div>
+        </nav>
+        <!-- Commands -->
+        <div class="commands" style="background-color: #121212;">
+            <!-- Command Start -->
+            <div class="command" data-name="info">
+                <h2>/yardım</h2><span>
+                    <div class="cmdinfo">
+                        <p>/yardım yazarak bot hakkında detayları, komutları öğrene bilirsiniz.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="moderator">
+                <h2>/ban</h2><span>
+                    <div class="cmdinfo">
+                        <p>seçilen üye'yi sunucudan yasaklar</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="moderator">
+                <h2>/ban-liste</h2><span>
+                    <div class="cmdinfo">
+                        <p>banlanan üye'lerin listesini çıkartır.<p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="moderator">
+                <h2>/forceban</h2><span>
+                    <div class="cmdinfo">
+                        <p>sunucu'ya katılmayan üyeleri id'sini yazıp yasaklar.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="moderator">
+                <h2>/kick</h2><span>
+                    <div class="cmdinfo">
+                        <p>belirlenen üye'yi sunucu'dan atar.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command Start -->
+            <div class="command" data-name="moderator">
+                <h2>/nuke</h2><span>
+                    <div class="cmdinfo">
+                        <p>belirlenen kanalı silip yeniden oluşturur.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="moderator">
+                <h2>/rol ver</h2><span>
+                    <div class="cmdinfo">
+                        <p>belirlenen üye'ye belirlenen rolü verir.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+             <!-- Command Start -->
+            <div class="command" data-name="moderator">
+                <h2>/rol al</h2><span>
+                    <div class="cmdinfo">
+                        <p>belirlenen üye'den belirlenen rolü alır.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+             <!-- Command Start -->
+            <div class="command" data-name="moderator">
+                <h2>/süreli-rol-ver</h2><span>
+                    <div class="cmdinfo">
+                        <p>belirlenen üye'ye belirlenen rolü verir.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+             <!-- Command Start -->
+            <div class="command" data-name="moderator">
+                <h2>/unban</h2><span>
+                    <div class="cmdinfo">
+                        <p>sunucu'da yasaklanan üye'nin id'sini yazarak yasaklanmasını kaldıra bilirsiniz.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+             <!-- Command Start -->
+            <div class="command" data-name="moderator">
+                <h2>/zamanaşımı</h2><span>
+                    <div class="cmdinfo">
+                        <p>belirlenen üye'ye belirlenen süre'de zamanaşımı(timeout) atar.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+             <!-- Command Start -->
+            <div class="command" data-name="moderator">
+                <h2>/zamanaşımı-kaldır</h2><span>
+                    <div class="cmdinfo">
+                        <p>belirlenen üye'nin zamanaşımı(timeout)'nı kaldırır.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+             <!-- Command Start -->
+            <div class="command" data-name="info">
+                <h2>/avatar</h2><span>
+                    <div class="cmdinfo">
+                        <p>belirlenen üye'nin avatarını çıkartır.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+             <!-- Command Start -->
+            <div class="command" data-name="info">
+                <h2>/banner</h2><span>
+                    <div class="cmdinfo">
+                        <p>belirlenen üye'nin bannerini çıkartır.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+             <!-- Command Start -->
+            <div class="command" data-name="info">
+                <h2>/bildir</h2><span>
+                    <div class="cmdinfo">
+                        <p>bot için şikayet veya öneri yaparsınız</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+             <!-- Command Start -->
+            <div class="command" data-name="info">
+                <h2>/kura</h2><span>
+                    <div class="cmdinfo">
+                        <p>belirlenen seçenekler ile kura çekersiniz.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+             <!-- Command Start -->
+            <div class="command" data-name="moderator">
+                <h2>/lock</h2><span>
+                    <div class="cmdinfo">
+                        <p>belirlenen kanala /lock yazılırsa kanal kitlenir eğer bir kere daha /lock yazılırsa kanal kilidi açılır.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+             <!-- Command Start -->
+            <div class="command" data-name="moderator">
+                <h2>/otorol</h2><span>
+                    <div class="cmdinfo">
+                        <p>belirlenen rol ile sunucu'ya yeni katılan üye'lere belirlenen rol verilir</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+             <!-- Command Start -->
+            <div class="command" data-name="moderator">
+                <h2>/otorol-iptal</h2><span>
+                    <div class="cmdinfo">
+                        <p>otorol sistemi sıfırlanır.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+             <!-- Command Start -->
+            <div class="command" data-name="moderator">
+                <h2>/yavaşmod</h2><span>
+                    <div class="cmdinfo">
+                        <p>belirlenen kanala yazma süre'si eklenir. (spam engelleyici özellik gibi)</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+             <!-- Command Start -->
+            <div class="command" data-name="fun">
+                <h2>/tkm</h2><span>
+                    <div class="cmdinfo">
+                        <p>armis bot'la taş kağıt makas oynarsınız</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+              <!-- Command Start -->
+            <div class="command" data-name="fun">
+                <h2>/oyunlar</h2><span>
+                    <div class="cmdinfo">
+                        <p>/oyunlar komutu en kısa zamanda birden fazla oyunlar ile sizlerle.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+             <!-- Command Start -->
+            <div class="command" data-name="bot">
+                <h2>/destek</h2><span>
+                    <div class="cmdinfo">
+                        <p>/destek yazarak botun destek sunucu linki ve bot'un site linkini gönderen bir embed mesajı gönderir.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+             <!-- Command Start -->
+            <div class="command" data-name="bot">
+                <h2>/istatistik</h2><span>
+                    <div class="cmdinfo">
+                        <p>bot'un istatistik verilerine bakarsınız.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+             <!-- Command Start -->
+            <div class="command" data-name="bot">
+                <h2>/ping</h2><span>
+                    <div class="cmdinfo">
+                        <p>bot'un ping verilerine bakarsınız</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+             <!-- Command Start -->
+            <div class="command" data-name="bot">
+                <h2>/uptime</h2><span>
+                    <div class="cmdinfo">
+                        <p>bot'un uptime(Çalışma) süre'sini gösterir.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+             <!-- Command Start -->
+            <div class="command" data-name="info">
+                <h2>/kullanıcı-bilgi</h2><span>
+                    <div class="cmdinfo">
+                        <p>belirlenen üye'nin bilgilerini gösterir.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+             <!-- Command Start -->
+            <div class="command" data-name="info">
+                <h2>/sunucu-bilgi</h2><span>
+                    <div class="cmdinfo">
+                        <p>sunucu hakkında bilgi verir</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+             <!-- Command Start -->
+            <div class="command" data-name="bot">
+                <h2>/güncellemeler</h2><span>
+                    <div class="cmdinfo">
+                        <p>bot'un güncelleme'lerini veya yenilik'lerini gösterir</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+
+    <!-- faq -->
+    <div class="faq">
+        <div class="curve">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="1" id="faq"
+                    d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+        <div class="wrapper reveal">
+            <main id="questions" role="main">
+                <div class="title">
+                    <div class="th1">
+                        <h1>(S.S.S.)Sıkça Sorulan Sorular</h1>
+                    </div>
+                    <center>
+                        <div class="thr">
+                            <hr>
+                        </div>
+                    </center>
+                </div>
+                <input type="text" class="live-search-box" placeholder="Sana nasıl yardımcı olabiliriz?" />
+                <!-- question start -->
+                <div class="topic">
+                    <div class="open">
+
+                        <h2 class="question">Örnek Soru Metni 1?</h2>
+                        <span class="faq-t"></span>
+                    </div>
+                    <p class="answer">Örnek cevap metni (buraya soruların cevapları girilecek).
+</p>
+                </div>
+                <!-- question end -->
+                <!-- question start -->
+                <div class="topic">
+                    <div class="open">
+                        <h2 class="question">Örnek Soru Metni 2?
+                        </h2><span class="faq-t"></span>
+                    </div>
+                    <p class="answer">Örnek cevap metni (buraya soruların cevapları girilecek).
+                    </p>
+                </div>
+                <!-- question end -->
+                <!-- question start -->
+                <div class="topic">
+                    <div class="open">
+                        <h2 class="question">Örnek Soru Metni 3?
+                        </h2><span class="faq-t"></span>
+                    </div>
+                    <p class="answer">Örnek cevap metni (buraya soruların cevapları girilecek).
+                    </p>
+                </div>
+                <!-- question end -->
+                <!-- question start -->
+                <div class="topic">
+                    <div class="open">
+                        <h2 class="question">Örnek Soru Metni 4?
+                        </h2><span class="faq-t"></span>
+                    </div>
+                    <p class="answer">Örnek cevap metni (buraya soruların cevapları girilecek).</p>
+                </div>
+                <!-- question end -->
+                <!-- question start -->
+                <div class="topic">
+                    <div class="open">
+                        <h2 class="question">Örnek Soru Metni5?
+                        </h2><span class="faq-t"></span>
+                    </div>
+                    <p class="answer">Örnek cevap metni (buraya soruların cevapları girilecek).</p>
+                </div>
+                <!-- question end -->
+            </main>
+        </div>
+        <div class="curve">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="1"
+                    d="M0,32L48,80C96,128,192,224,288,218.7C384,213,480,107,576,96C672,85,768,171,864,176C960,181,1056,107,1152,64C1248,21,1344,11,1392,5.3L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+    </div>
+    <!-- faq end -->
+
+    <!-- footer -->
+    <footer>
+
+        <div class="wrapper">
+            <div class="foot" style="background-color: #121212;">
+                <h1 style="background-color: #121212;">Botunuzun adı <h1>
+                <nav>
+                    <ul class="nav-area bottom-nav" style="background-color: #121212;">
+                        <li><a href="#top">Ana Sayfa</a></li>
+                        <li><a href="#features">Bot Hakkında</a></li>
+                        <li><a href="#commands">Komutlar</a></li>
+                        <li><a href="#faq">SSS</a></li>
+                    </ul>
+                </nav>
+                <h4>Botun Destek Sunucusuna Katılmak İçin <a href="https://discord.gg/8J8RAWrMrH" style="color : rgb(220, 223, 25) ; font-size: 1rem; letter-spacing: 0px;">Tıkla</a>
+        </div>
+    </footer>
+
+    <!-- footer end -->
+    <!--Yukarı çık butonu-->
+
+    <button id="scrollTopBtn" title="Yukarı Çık">↑</button>
+    <script src="upToButton.js"></script>
+    <!--Yukarı çık butonu bitiş-->
+
+    <script src="main.js"></script>
+    <script src="commands.js"></script>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js">   </script>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</body>
+</html>
